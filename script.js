@@ -40,9 +40,11 @@ var password=document.lgform.password.value;
 
 if(email==null || email==""){
 	alert("please enter the email");
+	return false;
 }
 else if(password==null || password==""){
-	alert("please enter the password")
+	alert("please enter the password");
+	return false;
 }
 else{
 	alert("you have succesfully logged in");
